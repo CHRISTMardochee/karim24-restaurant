@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karim 24 — Le Meilleur Chawarma de Cotonou | Restaurant Fast-Food</title>
+  <meta name="description"
+    content="Karim 24, le restaurant incontournable de Cotonou. Chawarma, burgers, pizzas, poulet braisé et gambas. Ouvert tous les jours de 10h à 3h. Livraison disponible.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+</head>
+
+<body>
+
+  <!-- ════ NAVBAR ════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">K</div>
+        <div class="logo-text">Karim <span>24</span></div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Avis</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="tel:+22997966666" class="nav-cta">📞 Commander</a></li>
+      </ul>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- ════ HERO ════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&q=80" alt="Karim 24 Restaurant">
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+
+        <h1 class="fade-up">
+          Le <span class="highlight">Chawarma</span><br>
+          Incontournable<br>
+          de Cotonou
+        </h1>
+
+        <p class="hero-description fade-up" style="transition-delay: 0.1s;">
+          Depuis des années, Karim 24 régale les Cotonois avec ses chawarmas légendaires,
+          ses burgers gourmands et ses plats savoureux. Une expérience culinaire unique,
+          tous les jours jusqu'à l'aube.
+        </p>
+
+        <div class="hero-actions fade-up" style="transition-delay: 0.2s;">
+          <a href="https://wa.me/22997966666?text=Bonjour%20Karim%2024%20!%20Je%20souhaite%20passer%20une%20commande."
+            target="_blank" class="btn btn-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Commander sur WhatsApp
+          </a>
+          <a href="#menu" class="btn btn-outline">
+            📋 Voir le menu
+          </a>
+        </div>
+
+        <div class="hero-stats fade-up" style="transition-delay: 0.3s;">
+          <div class="hero-stat">
+            <div class="stat-value" data-count="5" data-suffix="/5">0</div>
+            <div class="stat-label">Note clients</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-value" data-count="7" data-suffix="j/7">0</div>
+            <div class="stat-label">Jours ouverts</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-value" data-count="17" data-suffix="h">0</div>
+            <div class="stat-label">D'ouverture / jour</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating cards -->
+    <div class="hero-float">
+      <div class="float-card">
+        <span class="fc-icon">⭐</span>
+        <div class="fc-text">
+          <strong>5/5 étoiles</strong>
+          <span>+20 avis clients</span>
+        </div>
+      </div>
+      <div class="float-card">
+        <span class="fc-icon">🛵</span>
+        <div class="fc-text">
+          <strong>Livraison rapide</strong>
+          <span>Partout à Cotonou</span>
+        </div>
+      </div>
+      <div class="float-card">
+        <span class="fc-icon">🕐</span>
+        <div class="fc-text">
+          <strong>10h → 3h du matin</strong>
+          <span>Tous les jours</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ ABOUT ════ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image fade-up">
+          <img src="https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=800&q=80" alt="Ambiance Karim 24">
+          <div class="experience-badge">
+            <span class="eb-number">24</span>
+            <span class="eb-text">Heures de passion</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-label fade-up">Notre histoire</span>
+          <h2 class="section-title fade-up">
+            Plus qu'un restaurant,<br>une <span style="color: var(--accent)">institution</span>
+          </h2>
+          <p class="section-desc fade-up">
+            Karim 24 est bien plus qu'un simple fast-food. C'est LE rendez-vous
+            incontournable des amateurs de bonne cuisine à Cotonou. Notre secret ?
+            Des ingrédients frais, des recettes authentiques et une passion sans limites
+            pour la satisfaction de nos clients.
+          </p>
+
+          <div class="about-features stagger-children">
+            <div class="about-feature fade-up">
+              <span class="af-icon">🌿</span>
+              <div class="af-text">
+                <h4>Ingrédients frais</h4>
+                <p>Produits locaux sélectionnés chaque jour</p>
+              </div>
+            </div>
+            <div class="about-feature fade-up">
+              <span class="af-icon">👨‍🍳</span>
+              <div class="af-text">
+                <h4>Savoir-faire unique</h4>
+                <p>Des recettes perfectionnées avec passion</p>
+              </div>
+            </div>
+            <div class="about-feature fade-up">
+              <span class="af-icon">❄️</span>
+              <div class="af-text">
+                <h4>Salle climatisée</h4>
+                <p>Confort optimal pour votre repas</p>
+              </div>
+            </div>
+            <div class="about-feature fade-up">
+              <span class="af-icon">📶</span>
+              <div class="af-text">
+                <h4>Wi-Fi gratuit</h4>
+                <p>Restez connecté en toute tranquillité</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ MENU ════ -->
+  <section id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label fade-up">Nos délices</span>
+        <h2 class="section-title fade-up">Découvrez Notre <span style="color: var(--accent)">Menu</span></h2>
+        <p class="section-desc fade-up">
+          Du chawarma légendaire aux gambas savoureuses, chaque plat est préparé
+          avec soin pour éveiller vos papilles.
+        </p>
+      </div>
+
+      <div class="menu-categories fade-up">
+        <button class="menu-cat-btn active" data-category="all">Tous</button>
+        <button class="menu-cat-btn" data-category="chawarma">🌯 Chawarma</button>
+        <button class="menu-cat-btn" data-category="burger">🍔 Burgers</button>
+        <button class="menu-cat-btn" data-category="pizza">🍕 Pizzas</button>
+        <button class="menu-cat-btn" data-category="grill">🍗 Grillades</button>
+        <button class="menu-cat-btn" data-category="seafood">🦐 Fruits de mer</button>
+      </div>
+
+      <div class="menu-grid stagger-children">
+
+        <!-- Chawarma Classique -->
+        <div class="menu-card fade-up" data-category="chawarma">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1561651823-34feb02250e4?w=600&q=80" alt="Chawarma Classique">
+            <span class="mc-tag">⭐ Best-Seller</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Chawarma Classique</h3>
+            <p>Notre chawarma signature — viande marinée, légumes frais, sauce maison dans un pain chaud et
+              croustillant.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">1 500 <small>FCFA</small></span>
+              <a href="tel:+22997966666" class="menu-card-order">→</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chawarma Royal -->
+        <div class="menu-card fade-up" data-category="chawarma">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=600&q=80" alt="Chawarma Royal">
+            <span class="mc-tag">🔥 Populaire</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Chawarma Royal</h3>
+            <p>Version XL avec double portion de viande, garniture généreuse, fromage fondu et sauce spéciale Karim.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">4 000 - 7 000 <small>FCFA</small></span>
+              <a href="tel:+22997966666" class="menu-card-order">→</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Burger Karim -->
+        <div class="menu-card fade-up" data-category="burger">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Burger Karim">
+          </div>
+          <div class="menu-card-body">
+            <h3>Burger Gourmand</h3>
+            <p>Steak juteux, fromage fondant, salade croquante, tomate fraîche et notre sauce secrète maison.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">4 000 <small>FCFA</small></span>
+              <a href="tel:+22997966666" class="menu-card-order">→</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pizza -->
+        <div class="menu-card fade-up" data-category="pizza">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Pizza Karim">
+          </div>
+          <div class="menu-card-body">
+            <h3>Pizza Karim Special</h3>
+            <p>Pizza croustillante garnie de mozzarella fondante, viande épicée et légumes grillés du marché.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">5 000 <small>FCFA</small></span>
+              <a href="tel:+22997966666" class="menu-card-order">→</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poulet braisé -->
+        <div class="menu-card fade-up" data-category="grill">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=600&q=80" alt="Poulet Braisé">
+          </div>
+          <div class="menu-card-body">
+            <h3>Poulet Braisé</h3>
+            <p>Poulet mariné aux épices africaines, grillé à la perfection. Servi avec alloco ou frites croustillantes.
+            </p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">5 000 - 8 000 <small>FCFA</small></span>
+              <a href="tel:+22997966666" class="menu-card-order">→</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gambas -->
+        <div class="menu-card fade-up" data-category="seafood">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1625943553852-781c6dd46faa?w=600&q=80" alt="Gambas Grillées">
+            <span class="mc-tag">🌟 Premium</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Gambas & Crevettes Grillées</h3>
+            <p>Gambas fraîches du jour, marinées aux herbes et grillées. Un véritable délice de la mer.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">6 000 - 8 000 <small>FCFA</small></span>
+              <a href="tel:+22997966666" class="menu-card-order">→</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ SERVICES ════ -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label fade-up">Nos services</span>
+        <h2 class="section-title fade-up">À votre <span style="color: var(--accent)">service</span></h2>
+        <p class="section-desc fade-up">
+          Que vous préfériez dîner sur place, emporter ou vous faire livrer,
+          Karim 24 s'adapte à vos envies.
+        </p>
+      </div>
+
+      <div class="services-grid stagger-children">
+        <div class="service-card fade-up">
+          <div class="service-icon">🍽️</div>
+          <h3>Sur Place</h3>
+          <p>Profitez de notre terrasse conviviale ou de notre salle climatisée pour un moment de détente. Ambiance
+            chaleureuse et Wi-Fi gratuit.</p>
+        </div>
+
+        <div class="service-card fade-up">
+          <div class="service-icon">🥡</div>
+          <h3>À Emporter</h3>
+          <p>Pressé ? Commandez par téléphone et récupérez votre commande toute chaude, prête en quelques minutes.</p>
+        </div>
+
+        <div class="service-card fade-up">
+          <div class="service-icon">🛵</div>
+          <h3>Livraison</h3>
+          <p>Nous venons à vous ! Livraison rapide dans tout Cotonou. Un simple appel et votre repas arrive chez vous.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ TESTIMONIALS ════ -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label fade-up">Témoignages</span>
+        <h2 class="section-title fade-up">Ce que disent <span style="color: var(--accent)">nos clients</span></h2>
+        <p class="section-desc fade-up">
+          Noté 5/5 sur les plateformes en ligne, Karim 24 est la référence à Cotonou.
+        </p>
+      </div>
+
+      <div class="testimonials-grid stagger-children">
+        <div class="testimonial-card fade-up">
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-quote">
+            "LE chawarma incontournable de Cotonou ! J'y vais au moins 3 fois par semaine.
+            La qualité est toujours au rendez-vous, les portions sont généreuses et le personnel est accueillant."
+          </p>
+          <div class="tc-author">
+            <div class="tc-avatar">AM</div>
+            <div class="tc-author-info">
+              <h4>Abdoulaye M.</h4>
+              <span>Client régulier</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-quote">
+            "Un vrai cool fast-food ! Le chawarma est très bien préparé, l'accueil est chaleureux
+            et les prix sont raisonnables. L'endroit parfait pour manger tard le soir."
+          </p>
+          <div class="tc-author">
+            <div class="tc-avatar">FK</div>
+            <div class="tc-author-info">
+              <h4>Fatima K.</h4>
+              <span>Via LaCarte.menu</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-quote">
+            "Les gambas sont incroyables et le poulet braisé est à tomber. Karim 24 a su diversifier
+            son menu tout en gardant la qualité de son chawarma légendaire. Bravo !"
+          </p>
+          <div class="tc-author">
+            <div class="tc-avatar">SP</div>
+            <div class="tc-author-info">
+              <h4>Serge P.</h4>
+              <span>Via TripInAfrica</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ CTA ════ -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <span class="section-label fade-up">Envie d'un bon repas ?</span>
+        <h2 class="section-title fade-up">
+          Passez votre commande<br><span style="color: var(--accent)">dès maintenant</span>
+        </h2>
+        <p class="section-desc fade-up">
+          Appelez-nous ou passez directement au restaurant.<br>
+          Ouvert tous les jours de 10h à 3h du matin.
+        </p>
+        <div class="cta-actions fade-up">
+          <a href="https://wa.me/22997966666?text=Bonjour%20Karim%2024%20!%20Je%20souhaite%20passer%20une%20commande."
+            target="_blank" class="btn btn-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Commander sur WhatsApp
+          </a>
+          <a href="tel:+22997966666" class="btn btn-outline">
+            📞 +229 97 96 66 66
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ CONTACT ════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label fade-up">Retrouvez-nous</span>
+        <h2 class="section-title fade-up">Informations <span style="color: var(--accent)">pratiques</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-left">
+          <p class="section-desc fade-up" style="margin-bottom: 0;">
+            Venez nous rendre visite ou appelez pour commander.
+            Nous sommes ouverts tous les jours pour vous servir.
+          </p>
+
+          <div class="contact-info-list stagger-children">
+            <div class="contact-item fade-up">
+              <div class="ci-icon">📍</div>
+              <div class="ci-text">
+                <h4>Adresse</h4>
+                <p>Route de Lomé, Rue 12.191<br>Cotonou, Bénin</p>
+              </div>
+            </div>
+
+            <div class="contact-item fade-up">
+              <div class="ci-icon">📞</div>
+              <div class="ci-text">
+                <h4>Téléphone</h4>
+                <p><a href="tel:+22997966666" style="color: var(--accent);">+229 97 96 66 66</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item fade-up">
+              <div class="ci-icon">🕐</div>
+              <div class="ci-text">
+                <h4>Horaires d'ouverture</h4>
+                <p>Tous les jours : 10h00 — 3h00 du matin</p>
+              </div>
+            </div>
+
+            <div class="contact-item fade-up">
+              <div class="ci-icon">♿</div>
+              <div class="ci-text">
+                <h4>Accessibilité</h4>
+                <p>Accessible aux personnes à mobilité réduite</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-map fade-up">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.0!2d2.3833!3d6.3667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCotonou%2C+Benin!5e0!3m2!1sfr!2sbj!4v1600000000000"
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation Karim 24">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ FOOTER ════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-text">Karim <span>24</span></div>
+          <p>
+            Le chawarma incontournable de Cotonou. Des saveurs authentiques,
+            une passion sans limites, un service irréprochable depuis des années.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Avis</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Horaires</h4>
+          <ul>
+            <li><a href="#">Lun - Dim</a></li>
+            <li><a href="#">10h00 — 3h00</a></li>
+            <li><a href="tel:+22997966666" style="color: var(--accent);">📞 +229 97 96 66 66</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Karim 24 — Tous droits réservés</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/22997966666?text=Bonjour%20Karim%2024%20!%20Je%20souhaite%20passer%20une%20commande."
+    target="_blank" class="whatsapp-float" id="whatsappFloat" aria-label="Commander sur WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    <span class="wa-tooltip">Commander sur WhatsApp</span>
+  </a>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -226,6 +226,8 @@ section {
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 700;
+  /* ensure we always have a gap even before CSS gap property takes effect */
+  margin-left: 12px;
 }
 
 .nav-logo .logo-text span {
@@ -345,6 +347,8 @@ section {
   position: relative;
   overflow: hidden;
   padding: 0;
+  /* make some room below the fixed navbar to prevent initial overlap */
+  padding-top: 80px;
 }
 
 .hero-bg {
@@ -386,6 +390,8 @@ section {
   position: relative;
   z-index: 2;
   max-width: 700px;
+  /* keep headings from collapsing when fonts load or during animations */
+  line-height: 1.3;
 }
 
 .hero-badge {

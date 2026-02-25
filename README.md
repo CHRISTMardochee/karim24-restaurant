@@ -1,6 +1,6 @@
 # 🔥 Karim 24 — Site Vitrine Restaurant
 
-> Le chawarma incontournable de Cotonou, Bénin
+> Le chawarma incontournable de Cotonou, Bénin, des generations sont passés par là.
 
 [![GitHub Pages](https://img.shields.io/badge/Live-GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://christmardochee.github.io/karim24-restaurant/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
